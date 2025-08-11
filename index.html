@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+
+    <!--put your external stylesheet links here-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lib/scrollmap.css">
+    <!--[if IE<9]>
+            <link rel="stylesheet" href="css/style.ie.css">
+        <![endif]-->
+
+    <!--you can also place internal styles here;
+             place these within <style> tags-->
+
+</head>
+
+<body>
+    <!--put your initial page content here-->
+    <div class="center">
+        <h1>DWIs in Minnesota: Where and Why?</h1>
+        <p>Using maps and data to figure out where in Minnesota DWIs are the biggest issue.</p>
+    </div>
+
+    <div class="center">
+        <img class="fit" src="img/dui-vs-dwi.jpeg">
+    </div>
+
+    <div class="center">
+        <p>As a car dominated society, the USA will always experience accidents related to driving. One of the most common accident types stem from DWIs, or Driving While Intoxicated. According to estimates, around 850,000 people in the United States alone get arrested for suspected DWIs. </p>
+    </div>
+
+    <div class="center">
+        <img class="fit" src="img/What-is-DWI.webp">
+        <b>Image of a person holding a beer while driving, showing what can qualify as a DWI.</b>
+    </div>
+
+    <div class="center">
+        <p>DWIs also take thousands of lives per year. According to the CDC, around 11,654 people were killed by accidents that involved DWI. This makes up around 30% of all driving fatalities in the US alone.</p>
+    </div>
+
+    <div class="center">
+        <img class="fit" src="img/1000_F_345357093_4Cx7OnyBTzLi21K9ahqoWiD7MGeCmPah.jpg">
+        <b>Image of a car accident with someone being stretchered away.</b>
+    </div>
+
+    <div class="center">
+        <p>Although Minnesota ranks on the lower percentile of alcohol-influenced accidents, 100 people still lose their lives each year due to drunk drivers (National Highway Traffic Safety Administration). With all of this information being said, it made me question... where in Minnesota is drunk driving the worst?</p>
+    </div>
+
+    <div class="center">
+        <img class="fit" src="img/NHTSAMAP.PNG">
+        <b>A map made by the National Highway Traffic Safety Administration showing the percent of fatalities per car accident that occur in each state.</b>
+    </div>
+
+    <div class="center">
+        <p>Using data from the Bureau of Criminal Apprehension, I gathered the total number of DWI accidents and DWI arrests per county and crossed that data with population data. As shown in the map below, you can see which counties have the worst DWI incident rates in the state (with darker shades having worse rates): </p>
+    </div>
+    
+    <div id="map-container" class="center">
+        <h2>Map of DWI Incident Rates by County</h2>
+        <svg id="map"></svg>
+        <b>Map that shows which counties in Minnesota experiences the most DWI accidents and arrests per capita. Click on each county to see more statistics!</p>
+    </div>
+
+    <div id="chart-container" class="center">
+        <svg id="chart"></svg>
+        <b>Bar graph shows each county in order on how many DWI accidents and arrests there are per capita. Hover over the bars to see each county!</p>
+    </div>
+    
+    <div id="bar-popup" style="
+        position: absolute;
+        background: white;
+        border: 1px solid black;
+        padding: 6px;
+        z-index: 9999;
+        pointer-events: none;
+        display: none;
+    "></div>
+    
+    <div class="center">
+        <p>When cross referencing data from intoxistates.com, you can see that the DWI incident data and the amount of regular alcohol consumers does not directly correlate. Why is that?</p>
+    </div>
+
+    <div class="center">
+        <img class="fit" src="img/DrunkCountiesMap.PNG">
+        <b>Image of the drunkest counties in the United States (according to intoxistates.com).</b>
+    </div>
+
+    <div class="center">
+        <p>For one, infrastructure plays a big part. In the majority of rural counties in Minnesota, the only motive of transportation is through cars. In the counties that define the Minneapolis-St. Paul metro (which is Hennepin, Ramsey, Anoka, Dakota, Washington and Scott counties), they all rank in the bottom half of DWI incidents. This is due to the increased motives of other transportation, such as cabs and trains.</p>
+    </div>
+
+    <div class="center">
+        <img class="fit" src="img/Risky-Roads1.jpeg">
+        <b>Image of the different types of roads, with rural roads being empty and urban roads being full and diverse.</b>
+    </div>
+
+    <div class="center">
+        <p>Secondly, Minnesota as a whole indulges a lot in alcohol. Minnesota contains one of the 50 drunkest counties in the United States, according to <a href="https://247wallst.com/special-report/2021/10/08/americas-drunkest-counties/">247wallst.com.</a> It also borders Wisconsin, which holds some of the most binge drinkers <a href="https://intoxistates.com/">per capita per county.</a> With alcohol being a normal cultural phenomenon, there will be more people who would make the mistake and drink while intoxicated.</p>
+    </div>
+
+    <div class="center">
+        <img class="fit" src="img/states-that-drink-the-most-alcohol-in-america-per-capita-infographic-1200x900.jpg">
+        <b>A map showing which states drink the most alcohol per capita, per vinepair.com.</b>
+    </div>
+
+    <div class="center">
+        <p>Lastly, there may be a lack of support needed to overcome such abuses. There are a variety of reasons people can resort to drugs and alcohol, such as <a href="https://www.clearstepsrecovery.com/addiction-recovery-blog/why-do-people-drink-alcohol">family history, stress relief and grief relief.</a> With a lack of support groups, people will resort to alcohol or drugs, and that can influence the number of DWI incidents in each county.</p>
+    </div>
+
+    <div class="center">
+        <img class="fit" src="img/OIP.webp">
+        <b>Image of a support group.</b>
+    </div>
+
+    <div class="center">
+        <p>What can we do to prevent more DWIs from occurring in the state? For one, creating avenues where people could travel safely without their own vehicles would be a good start. Promoting ridesharing opportunities and making them more easily accessible in rural areas could prevent drivers from driving while under the influence of drugs or alcohol. Furthermore, we can promote more support systems within different communities across the state. This can create a sense of community and assistance to people who are struggling, giving them an opportunity to control their consumption and to make things safer in their lives and others. Finally, promoting the dangers of drinking and driving through any ways can help make people make smarter decision. Whether it is flashing ads on TV or using personal experiences to tell the dangers of driving while impaired, promoting awareness will always be an important way to prevent more accidents in the future.</p>
+    </div>
+
+    <div class="center">
+        <img class="fit" src="img/OIP (1).webp">
+        <b>Imagine of the 'Drive Sober or Get Pulled Over' campaign by the National Highway Traffic Safety Administration.</b>
+    </div>
+    
+    <script type="module">
+
+        import { geoAitoff } from "https://cdn.skypack.dev/d3-geo-projection@4";
+
+        const projection = geoAitoff();
+
+    </script>
+    <script src="https://unpkg.com/simple-statistics@7.7.0/dist/simple-statistics.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script type="text/javascript" src="lib/d3.v7.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v3.min.js"></script>
+
+    <div>
+        <p> &nbsp;</p>
+        <p> &nbsp;</p>
+        <p> &nbsp;</p>
+        <p>Sources: </p>
+        <p> </p>
+        <p>Minnesota DWI Data: https://bcadataportal.state.mn.us/DWI</p>
+        <p> </p>
+        <p>County Population Data: https://www.minnesota-demographics.com/counties_by_population</p>
+        <p> </p>
+        <p>Shapefile Data: https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html</p>
+        <p> </p>
+        <p>DWI Estimates: https://geraldmillerlawyer.com/blog/how-many-dui-arrests-happen-each-year-in-u-s/</p>
+        <p> </p>
+        <p>NHTSA Data: https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813713</p>
+        <p> </p>
+        <p>Linked Alcohol Use Map: https://intoxistates.com/</p>
+        <p> </p>
+        <p>Minnesota Department of Health: https://mn.gov/dhs/assets/traditional-healing-native-communities_tcm1053-450682.pdf</p>
+        <p> </p>
+        <p>Alcoholism Reasonings: https://www.clearstepsrecovery.com/addiction-recovery-blog/why-do-people-drink-alcohol</p>
+        <p> </p>
+        <p>List of Most Drunk Counties: https://247wallst.com/special-report/2021/10/08/americas-drunkest-counties/</p>
+        <p> </p>
+        <p>Alcohol and Keys Image: https://dui.unbundledlegalhelp.com/dui/minneapolis-mn?t=dui&msclkid=384b09f40e111affa2f9616d6515bfe6&utm_source=bing&utm_medium=cpc&utm_campaign=ULH%20-%20DUI%20-%20Search%20-%20Minneapolis%20MN&utm_term=dui&utm_content=DUI</p>
+        <p> </p>
+        <p>Alcohol Arrest Image: https://geraldmillerlawyer.com/blog/what-is-dwi/</p>
+        <p> </p>
+        <p>Urban vs Rural Road Image: https://www.lytx.com/blog/rural-vs-urban-roads-which-are-riskier</p>
+        <p> </p>
+        <p>Car Accident Image: https://stock.adobe.com/images/on-the-car-crash-traffic-accident-scene-paramedics-save-life-of-a-female-victim-lying-on-stretchers-they-listen-to-a-heartbeat-apply-oxygen-mask-and-give-first-aid-firefighters-extinguish-fire/345357093</p>
+        <p> </p>
+        <p>Alcohol per Capita Map: https://vinepair.com/articles/map-states-drink-alcohol-america-2022/</p>
+        <p> </p>
+        <p>Meeting Image: https://midwestrecoverycenters.com/how-long-are-aa-meetings/</p>
+        <p> </p>
+        <p>Drive Sober Ad: https://www.mysuncoast.com/2022/08/17/local-law-enforcement-participating-drive-sober-or-get-pulled-over-campaign/</p>
+        <p> </p>
+    </div>
+</body>
+
+</html>

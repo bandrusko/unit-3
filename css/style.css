@@ -1,0 +1,131 @@
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+.axis text {
+    font-family: sans-serif;
+    font-size: 1em;
+    fill: black;
+}
+.states {
+    fill: #FFF;
+    stroke: #CCC;
+    stroke-width: 2px;
+}
+.gratLines {
+    fill: none;
+    stroke: #999;
+    stroke-width: 1px;
+}
+.gratBackground {
+    fill: #D5E3FF;
+}
+#chart {
+    width: 100%;
+    display: block;
+    margin: 10px 0 0 20px;
+}
+.regions {
+    stroke: #000;
+    stroke-width: 0.5px;
+    stroke-linecap: round;
+}
+.numbers {
+    fill: white;
+    font-family: sans-serif;
+}
+.chartTitle {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.chart {
+    float: right;
+    margin: 7px 20px 0 0;
+}
+
+.chartTitle {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.chartBackground {
+    fill: rgba(128,128,128,.2);
+}
+.chartFrame {
+    fill: none;
+    stroke: grey;
+    stroke-width: 3px;
+    shape-rendering: crispEdges;
+}
+p {
+    color: black;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(201, 197, 151);
+    color: #222;
+}
+#img {
+    height: 600px;
+    width: 740px;
+}
+.popup {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    pointer-events: auto;
+}
+#bar-popup {
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+.center {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 780px;
+    padding: 15px;
+}
+#map, .data-image {
+    width: 40vw; 
+    max-width: 740px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border: medium solid black;
+    box-sizing: border-box;
+}
+.fit {
+    max-width: 740px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border: medium solid black;
+    box-sizing: border-box;
+}
+.center b {
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    font-size: .9em;
+    margin-top: 4px;
+    color: black;
+    font-style: oblique;
+}
+b, strong {
+    font-weight: normal;
+}
